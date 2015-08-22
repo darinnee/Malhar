@@ -97,5 +97,78 @@
     <name>dt.application.TwitterTrendingDemo.operator.QueryResult.numRetries</name>
     <value>2147483647</value>
   </property>
+  
+  <!-- RollingTopURLsDemo -->
+  <property>
+	<name>dt.application.TwitterDemoWithFilter.operator.TopCounter.topCount
+	</name>
+	<value>10</value>
+  </property>
+  <property>
+	<name>dt.application.TwitterDemoWithFilter.stream.TweetStream.locality
+	</name>
+	<value>CONTAINER_LOCAL</value>
+  </property>
+  <property>
+    <name>dt.application.RollingTopURLsDemo.operator.Query.topic</name>
+    <value>TwitterURLQuery</value>
+  </property>
+  <property>
+    <name>dt.application.RollingTopURLsDemo.operator.QueryResult.topic</name>
+    <value>TwitterURLQueryResult</value>
+  </property>
+  <property>
+    <name>dt.application.RollingTopURLsDemo.operator.QueryResult.numRetries</name>
+    <value>2147483647</value>
+  </property>
+  
+  <!-- TwitterUserDemo -->
+  <property>
+	<name>dt.application.RollingTopUsersDemo.operator.TopCounter.topCount
+	</name>
+	<value>10</value>
+  </property>
+  <property>
+	<name>dt.application.RollingTopUsersDemo.stream.TweetStream.locality
+	</name>
+	<value>CONTAINER_LOCAL</value>
+  </property>
+  <property>
+    <name>dt.application.TwitterUserDemo.operator.Query.topic</name>
+    <value>TwitterUserQuery</value>
+  </property>
+  <property>
+    <name>dt.application.TwitterUserDemo.operator.QueryResult.topic</name>
+    <value>TwitterUserQueryResult</value>
+  </property>
+  <property>
+    <name>dt.application.TwitterUserDemo.operator.QueryResult.numRetries</name>
+    <value>2147483647</value>
+  </property>
+ 
+  <!-- RollingTopMediaDemo -->
+  <property>
+	<name>dt.application.RollingTopMediaTypesDemo.operator.TopCounter.topCount
+	</name>
+	<value>10</value>
+  </property>
+  <property>
+	<name>dt.application.RollingTopMediaTypesDemo.stream.TweetStream.locality
+	</name>
+	<value>CONTAINER_LOCAL</value>
+  </property>
+  <property>
+    <name>dt.application.RollingTopMediaDemo.operator.Query.topic</name>
+    <value>TwitterMediaQuery</value>
+  </property>
+  <property>
+    <name>dt.application.RollingTopMediaDemo.operator.QueryResult.topic</name>
+    <value>TwitterMediaQuery</value>
+  </property>
+  <property>
+    <name>dt.application.RollingTopMediaDemo.operator.QueryResult.numRetries</name>
+    <value>2147483647</value>
+  </property>
+
 
 </configuration>
