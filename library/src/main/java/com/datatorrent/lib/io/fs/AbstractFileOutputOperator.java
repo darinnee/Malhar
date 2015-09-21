@@ -1139,10 +1139,10 @@ public abstract class AbstractFileOutputOperator<INPUT> extends BaseOperator imp
     fileNameToTmpName.remove(fileName);
 
     //when writing to tmp files there can be vagrant tmp files which we have to clean
-    FileStatus[] statuses = fs.listStatus(new Path(filePath));
+    FileStatus[] statuses = fs.listStatus(destPath.getParent());
     for (FileStatus status : statuses) {
       String statusName = status.getPath().getName();
-      if (statusName.endsWith(TMP_EXTENSION) && statusName.startsWith(fileName)) {
+      if (statusName.endsWith(TMP_EXTENSION) && statusName.startsWith(destPath.getName())) {
         LOG.debug("deleting vagrant file {}", statusName);
         fs.delete(status.getPath(), true);
       }
